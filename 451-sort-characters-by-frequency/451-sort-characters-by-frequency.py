@@ -22,14 +22,3 @@ class Solution(object):
             res += cha*(-freq)
         return res
         
-        
-#         # Build heap
-# 	heap = [(-v, k) for k, v in cnt.items()]
-# 	heapq.heapify(heap)
-	
-# 	# Build string
-# 	res = []
-# 	while heap:
-# 		v, k = heapq.heappop(heap)
-# 		res += [k] * -v
-# 	return ''.join(res)
