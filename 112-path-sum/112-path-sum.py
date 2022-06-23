@@ -28,9 +28,8 @@ class Solution(object):
             
             return False
             
-            
-        
         if not root:
             return False
+        
         return hasPathSumHelper(root, targetSum)
         
