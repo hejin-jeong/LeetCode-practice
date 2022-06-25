@@ -18,7 +18,6 @@ class Solution(object):
                 return TreeNode(nums[0], None, None)
 
             middle = len(nums)//2
-            # if middle < len(nums):
             current = TreeNode(nums[middle], None, None)
 
             left_subtree = create_bst_helper(nums[:middle]) 
