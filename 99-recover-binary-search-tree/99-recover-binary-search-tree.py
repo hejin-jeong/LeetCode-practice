@@ -6,7 +6,7 @@
 #         self.right = right
 class Solution(object):
     first, second = None, None
-    prev = TreeNode((-1)*float('inf'),None,None)
+    prev = TreeNode(float('-inf'),None,None)
     
     def inorder(self, root):
         if (root==None): 
