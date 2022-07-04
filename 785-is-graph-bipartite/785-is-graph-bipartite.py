@@ -3,8 +3,17 @@ class Solution(object):
         """
         :type graph: List[List[int]]
         :rtype: bool
-        """                
-# Our goal is trying to use two colors to color the graph and see if there are any adjacent nodes having the same color.
+        """
+#         colors = [0]*len(graph)
+        
+#         for i in range(len(graph)):
+#             # if not colored, color it and check neighbor. If not colored, color with different color, otherwise check the color, if same color, return False
+#             if colors[i] == 0:
+#                 colors[i] = 1
+                
+        
+        
+        # Our goal is trying to use two colors to color the graph and see if there are any adjacent nodes having the same color.
 # Initialize a color[] array for each node. Here are three states for colors[] array:
 # 0: Haven't been colored yet.
 # 1: Blue.
@@ -63,3 +72,24 @@ class Solution(object):
 #         return true;
 #     }
 # }
+
+
+# def isBipartite(self, graph):
+#         """
+#         :type graph: List[List[int]]
+#         :rtype: bool
+#         """
+#         n, colored = len(graph), {}
+#         for i in range(n):
+#             if i not in colored and graph[i]:
+#                 colored[i] = 1
+#                 q = collections.deque([i])
+#                 while q:
+#                     cur = q.popleft()
+#                     for nb in graph[cur]:
+#                         if nb not in colored:
+#                             colored[nb] = -colored[cur]
+#                             q.append(nb)
+#                         elif colored[nb] == colored[cur]:
+#                             return False
+#         return True
