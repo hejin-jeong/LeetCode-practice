@@ -22,6 +22,8 @@ class Solution(object):
                     visited = set()
                     
                     while queue:
+                        
+                        # Pop and add its neighbors
                         x, y, val = queue.popleft()
                         
                         # If the distance 1 location is outside the grid, walls, or visitied
