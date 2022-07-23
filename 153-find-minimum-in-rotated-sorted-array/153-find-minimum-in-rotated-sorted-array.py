@@ -13,7 +13,7 @@ class Solution(object):
         # binary search
         l = 0
         h = len(nums)-1
-        while l < h:
+        while l <= h:
             mid = (l+h)//2
             
             if nums[mid] > nums[mid+1]:
