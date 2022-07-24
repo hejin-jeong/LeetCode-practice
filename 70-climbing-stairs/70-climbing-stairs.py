@@ -20,9 +20,7 @@ class Solution(object):
             
         return t
     
-    
-    
-        
+# or
 #         steps = [0]*(n+1)
 #         if n == 1:
 #             return 1
@@ -36,6 +34,10 @@ class Solution(object):
 #             steps[i] = steps[i-1] + steps[i-2]
             
 #         return steps[n]
+        
+        
+        
+        
         
         
         # Below solutions are O(2^n)
